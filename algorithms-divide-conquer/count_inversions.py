@@ -35,3 +35,10 @@ def count_inversions(arr: List[int]):
 
 
 print(count_inversions([2, 1, 3, 4, 5]))
+
+arr = []
+with open("integer_array.txt", 'r') as f:
+    for line in f:
+        arr.append(int(line.strip()))
+
+print(count_inversions(arr)[0])
